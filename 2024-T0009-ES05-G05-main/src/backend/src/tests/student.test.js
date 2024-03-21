@@ -9,7 +9,7 @@ jest.mock('../services/databaseServices', () => ({
 const mockStudents = [
   { 
     id_aluno: 1,
-    nome: 'Student 1',
+    nome: 'Julia',
     email: 'student1@example.com',
     telefone: '123456789',
     data_nascimento: '2000-01-01',
@@ -22,7 +22,7 @@ const mockStudents = [
   },
   { 
     id_aluno: 2,
-    nome: 'Student 2',
+    nome: 'Marcos',
     email: 'student2@example.com',
     telefone: '987654321',
     data_nascimento: '2000-02-02',
