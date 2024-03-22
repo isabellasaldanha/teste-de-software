@@ -8,19 +8,25 @@ Este documento descreve os testes automatizados desenvolvidos para a funcionalid
 
 ### Service Tests
 
-- **Descrição:** Verifica se o serviço retorna corretamente a lista de estudantes do banco de dados.
-- **Cenário Testado:** Chamada do método `getAllStudents` no serviço de alunos.
-- **Expectativa:** O serviço deve retornar uma lista dos estudantes cadastrados com todas as informações necessárias.
+#### Teste 1: getAllStudents retorna lista de estudantes
+
+- *Objetivo:* Verificar se a lista completa de estudantes é retornada.
+- *Pré-condição:* Banco de dados contém registros de estudantes.
+- *Procedimento de Teste:* Invocar o método getAllStudents.
+- *Resultado Esperado:* Uma lista contendo todos os registros de estudantes é retornada.
+- *Resultado Obtido:* Lista de estudantes retornada com sucesso.
+- *Pós-condição:* Nenhuma alteração no estado do banco de dados.
 
 ### Controller Tests
 
-- **Descrição:** Confirma que o controlador responde corretamente com a lista de estudantes em formato JSON para a rota especificada.
-- **Cenário Testado:** Requisição GET para a rota `/students`.
-- **Expectativa:** O controlador deve responder com uma resposta JSON contendo a lista de estudantes conforme retornada pelo serviço `getAllStudents`.
+#### Teste 2: getAllStudents manipula requisição e resposta corretamente
 
-- **Descrição:** Assegura que o controlador lida com erros apropriadamente.
-- **Cenário Testado:** Simulação de uma falha no serviço ao chamar `getAllStudents`.
-- **Expectativa:** O controlador deve retornar uma resposta de erro com status HTTP 500 e uma mensagem de erro correspondente.
+- *Objetivo:* Confirmar que a rota de obtenção de todos os estudantes funciona conforme esperado.
+- *Pré-condição:* Rota /students é acessada.
+- *Procedimento de Teste:* Enviar uma requisição GET para a rota /students.
+- *Resultado Esperado:* O controlador responde com a lista completa de registros de estudantes.
+- *Resultado Obtido:* Lista completa de estudantes retornada com sucesso.
+- *Pós-condição:* Estado do banco de dados inalterado.
 
 ## Executando os Testes
 
