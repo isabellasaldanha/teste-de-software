@@ -32,6 +32,6 @@ Para executar os testes automatizados, siga as instruções abaixo:
 
 ## Resultados Obtidos
 
-<img src="./2024-T0009-ES05-G05-main/imagens/teste-software.jpg" >
+<img src="../../../../imagens/teste-software.jpg" >
 
 Após a execução dos testes, verifique os resultados no terminal. Todos os testes devem ter sido executados com sucesso, garantindo o correto funcionamento do serviço de puxar estudantes da API.
